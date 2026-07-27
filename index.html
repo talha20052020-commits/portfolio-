@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Talha Ahmed — Professional Video Editor & AI Content Creator | Pakistan</title>
+<meta name="description" content="Talha Ahmed is a professional video editor, motion graphics designer and AI content creator based in Pakistan, helping YouTubers, brands and agencies turn ideas into viral content.">
+<meta name="keywords" content="video editor, professional video editor, freelance video editor, YouTube editor, TikTok editor, reels editor, AI video editor, motion graphics designer, Pakistan video editor">
+<meta name="author" content="Talha Ahmed">
+<link rel="canonical" href="https://talhaahmed.com/">
+
+<!-- Open Graph -->
+<meta property="og:type" content="website">
+<meta property="og:title" content="Talha Ahmed — Turning Ideas into Viral Content">
+<meta property="og:description" content="Professional Video Editor | AI Content Creator | Motion Graphics Designer, based in Pakistan.">
+<meta property="og:image" content="/assets/og-cover.jpg">
+<meta property="og:url" content="https://talhaahmed.com/">
+
+<!-- Twitter -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Talha Ahmed — Turning Ideas into Viral Content">
+<meta name="twitter:description" content="Professional Video Editor | AI Content Creator | Motion Graphics Designer">
+<meta name="twitter:image" content="/assets/og-cover.jpg">
+
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><rect width=%22100%22 height=%22100%22 rx=%2224%22 fill=%22%23050505%22/><circle cx=%2250%22 cy=%2250%22 r=%2216%22 fill=%22%2360A5FA%22/></svg>">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="style.css">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Talha Ahmed",
+  "jobTitle": "Professional Video Editor, AI Content Creator, Motion Graphics Designer",
+  "url": "https://talhaahmed.com/",
+  "address": { "@type": "PostalAddress", "addressCountry": "PK" },
+  "sameAs": []
+}
+</script>
+</head>
+<body class="is-loading">
+
+<!-- ============ LOADER ============ -->
+<div id="loader" aria-hidden="true">
+  <div class="loader-mark">TALHA AHMED</div>
+  <div class="loader-bar"><span id="loader-fill"></span></div>
+  <div class="loader-count" id="loader-count">0%</div>
+</div>
+
+<!-- ============ CURSOR ============ -->
+<div class="cursor-dot" id="cursorDot"></div>
+<div class="cursor-ring" id="cursorRing"></div>
+
+<!-- ============ AMBIENT BG ============ -->
+<canvas id="bg-canvas"></canvas>
+<div class="blob blob-a"></div>
+<div class="blob blob-b"></div>
+<div class="grain"></div>
+<div id="scroll-progress"></div>
+
+<!-- ============ NAV ============ -->
+<header class="nav" id="siteNav">
+  <div class="container nav-inner">
+    <a href="#top" class="logo"><span class="dot"></span>Talha Ahmed</a>
+    <nav class="nav-links" aria-label="Primary">
+      <a href="#about">About</a>
+      <a href="#services">Services</a>
+      <a href="#work">Work</a>
+      <a href="#pricing">Pricing</a>
+      <a href="#faq">FAQ</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <div class="nav-cta">
+      <a href="#contact" class="btn btn-primary btn-sm magnetic">Hire Me</a>
+      <button class="burger" id="burgerBtn" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<div id="mobile-menu">
+  <a href="#about">About</a>
+  <a href="#services">Services</a>
+  <a href="#work">Work</a>
+  <a href="#pricing">Pricing</a>
+  <a href="#faq">FAQ</a>
+  <a href="#contact">Contact</a>
+</div>
+
+<main id="top">
+
+  <!-- ============ HERO ============ -->
+  <section class="hero" id="hero">
+    <div class="container hero-grid">
+      <div>
+        <div class="eyebrow reveal"><span class="pulse"></span>Available for new projects — Pakistan / Remote</div>
+        <h1>
+          <span class="line"><span>Turning Ideas</span></span>
+          <span class="line"><span class="grad">into Viral Content.</span></span>
+        </h1>
+        <p class="lead reveal">I'm Talha Ahmed — a professional video editor, motion graphics designer and AI content creator. I help YouTubers, startups and personal brands cut raw footage into scroll-stopping stories.</p>
+        <div class="hero-ctas reveal">
+          <span class="magnetic-wrap"><a href="#contact" class="btn btn-primary magnetic">Hire Me</a></span>
+          <span class="magnetic-wrap"><a href="#work" class="btn btn-ghost magnetic">View Portfolio</a></span>
+          <span class="magnetic-wrap"><a href="/assets/Talha-Ahmed-CV.pdf" download class="btn btn-ghost magnetic">Download CV</a></span>
+        </div>
+
+        <div class="timeline-strip reveal">
+          <div class="ts-head">
+            <span>edit_timeline.mp4</span>
+            <span class="rec">rendering</span>
+          </div>
+          <div class="ts-track" id="tsTrack">
+            <div class="ts-playhead" id="tsPlayhead"></div>
+          </div>
+          <div class="ts-thumbs">
+            <div class="thumb"></div><div class="thumb"></div><div class="thumb"></div>
+            <div class="thumb"></div><div class="thumb"></div><div class="thumb"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-photo reveal">
+        <div class="frame-ui"></div>
+        <div class="rec-badge">REC 00:24:11</div>
+        <span class="ph-mark">Photo — Talha Ahmed</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ TRUSTED / MARQUEE ============ -->
+  <section class="trusted">
+    <div class="container">
+      <div class="trusted-label">Trusted by future brands, creators & agencies</div>
+      <div class="marquee">
+        <div class="marquee-track">
+          <span>YouTube Creators</span><span>TikTok Brands</span><span>SaaS Startups</span><span>Podcast Networks</span><span>D2C Agencies</span><span>Personal Brands</span>
+          <span>YouTube Creators</span><span>TikTok Brands</span><span>SaaS Startups</span><span>Podcast Networks</span><span>D2C Agencies</span><span>Personal Brands</span>
+        </div>
+      </div>
+      <div class="stats-row">
+        <div class="stat reveal"><div class="num" data-count="180">0</div><div class="label">Projects Completed</div></div>
+        <div class="stat reveal"><div class="num" data-count="620">0</div><div class="label">Videos Edited</div></div>
+        <div class="stat reveal"><div class="num" data-count="4200">0</div><div class="label">Hours Edited</div></div>
+        <div class="stat reveal"><div class="num" data-count="98" data-suffix="%">0</div><div class="label">Client Satisfaction</div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ ABOUT ============ -->
+  <section class="section-pad" id="about">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-visual reveal">
+          <div class="waveform" id="aboutWave"></div>
+        </div>
+        <div class="about-text">
+          <div class="eyebrow reveal">About Me</div>
+          <p class="reveal"><strong>I cut, color and score stories that make people stop scrolling.</strong> For the last few years I've lived inside timelines — trimming pacing frame by frame, layering sound design that lands on the beat, and grading footage until it feels cinematic.</p>
+          <p class="reveal">My craft spans <strong>video editing</strong>, <strong>motion graphics</strong> and <strong>storytelling</strong>, backed by precise <strong>color grading</strong> and <strong>sound design</strong>. I also build <strong>AI-assisted content</strong> workflows — using tools like Runway, Kling and ElevenLabs — to move faster without losing craft.</p>
+          <p class="reveal">Clients come to me for one reason: <strong>fast delivery</strong> without compromising on quality. Every project ships polished, on-brand, and ready to publish.</p>
+          <div class="chip-row reveal">
+            <span class="chip">Video Editing</span>
+            <span class="chip">Motion Graphics</span>
+            <span class="chip">Storytelling</span>
+            <span class="chip">Color Grading</span>
+            <span class="chip">Sound Design</span>
+            <span class="chip">AI Content</span>
+            <span class="chip">Fast Delivery</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ SERVICES ============ -->
+  <section class="section-pad" id="services">
+    <div class="container">
+      <div class="section-head reveal">
+        <div class="eyebrow">Services</div>
+        <h2>Everything your content needs to perform.</h2>
+        <p>From short-form hooks to long-form documentaries — one editor, every format, no compromises.</p>
+      </div>
+      <div class="services-grid" id="servicesGrid"></div>
+    </div>
+  </section>
+
+  <!-- ============ TOOLS ============ -->
+  <section class="section-pad" id="tools">
+    <div class="container">
+      <div class="section-head reveal">
+        <div class="eyebrow">Toolkit</div>
+        <h2>Editing software & AI stack.</h2>
+        <p>Industry-standard software paired with the latest AI tools, so every project ships faster without cutting corners.</p>
+      </div>
+      <div class="tools-grid" id="toolsGridSoftware"></div>
+      <div class="tools-divider">AI Tools</div>
+      <div class="tools-grid" id="toolsGridAI"></div>
+    </div>
+  </section>
+
+  <!-- ============ SKILLS ============ -->
+  <section class="section-pad" id="skills">
+    <div class="container">
+      <div class="section-head reveal">
+        <div class="eyebrow">Skills</div>
+        <h2>Precision at every stage of the edit.</h2>
+        <p></p>
+      </div>
+      <div class="skills-wrap" id="skillsWrap"></div>
+    </div>
+  </section>
+
+  <!-- ============ PROJECTS ============ -->
+  <section class="section-pad" id="work">
+    <div class="container">
+      <div class="section-head reveal">
+        <div class="eyebrow">Selected Work</div>
+        <h2>Recent edits & case studies.</h2>
+        <p>A mix of YouTube long-form, short-form reels, commercial ads and AI-generated content. Click any project for the full case study.</p>
+      </div>
+      <div class="projects-masonry" id="projectsGrid"></div>
+    </div>
+  </section>
+
+  <!-- ============ TESTIMONIALS ============ -->
+  <section class="section-pad" id="testimonials">
+    <div class="container">
+      <div class="section-head center reveal" style="margin-left:auto;margin-right:auto;">
+        <div class="eyebrow" style="margin-left:auto;margin-right:auto;display:table;">Testimonials</div>
+        <h2>Clients say it best.</h2>
+      </div>
+      <div class="testi-grid" id="testiGrid"></div>
+      <div class="client-logos">
+        <span>StreamLabs+</span><span>Nova Media</span><span>PixelForge</span><span>Loopline</span><span>Northgate</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ PRICING ============ -->
+  <section class="section-pad" id="pricing">
+    <div class="container">
+      <div class="section-head center reveal" style="margin-left:auto;margin-right:auto;">
+        <div class="eyebrow" style="margin-left:auto;margin-right:auto;display:table;">Pricing</div>
+        <h2>Simple plans. No surprises.</h2>
+        <p style="margin-left:auto;margin-right:auto;">Custom retainers available for agencies and high-volume creators.</p>
+      </div>
+      <div class="pricing-grid" id="pricingGrid"></div>
+    </div>
+  </section>
+
+  <!-- ============ TIMELINE ============ -->
+  <section class="section-pad" id="journey">
+    <div class="container">
+      <div class="section-head reveal">
+        <div class="eyebrow">My Journey</div>
+        <h2>From student to studio.</h2>
+      </div>
+      <div class="timeline" id="timelineWrap"></div>
+    </div>
+  </section>
+
+  <!-- ============ FAQ ============ -->
+  <section class="section-pad" id="faq">
+    <div class="container">
+      <div class="section-head reveal">
+        <div class="eyebrow">FAQ</div>
+        <h2>Questions, answered.</h2>
+      </div>
+      <div class="faq-list" id="faqList"></div>
+    </div>
+  </section>
+
+  <!-- ============ CONTACT ============ -->
+  <section class="section-pad" id="contact">
+    <div class="container">
+      <div class="contact-wrap reveal">
+        <div class="eyebrow" style="margin-left:auto;margin-right:auto;display:table;">Let's Work Together</div>
+        <h2>Got a video that needs to go viral?</h2>
+        <p class="lead">Send over your footage or brief — I'll reply within 24 hours with a plan and a quote.</p>
+        <div class="contact-ctas">
+          <a href="https://wa.me/920000000000" target="_blank" rel="noopener" class="btn btn-primary magnetic">WhatsApp Me</a>
+          <a href="mailto:hello@talhaahmed.com" class="btn btn-ghost magnetic">Email Me</a>
+        </div>
+
+        <form class="contact-form" id="contactForm">
+          <div class="form-row">
+            <div class="field">
+              <label for="cf-name">Name</label>
+              <input id="cf-name" name="name" type="text" placeholder="Your name" required>
+            </div>
+            <div class="field">
+              <label for="cf-email">Email</label>
+              <input id="cf-email" name="email" type="email" placeholder="you@email.com" required>
+            </div>
+          </div>
+          <div class="field">
+            <label for="cf-type">Project type</label>
+            <select id="cf-type" name="type">
+              <option>YouTube Long-Form</option>
+              <option>Short-Form / Reels / TikTok</option>
+              <option>Motion Graphics</option>
+              <option>Commercial / Ad</option>
+              <option>AI Generated Video</option>
+              <option>Other</option>
+            </select>
+          </div>
+          <div class="field">
+            <label for="cf-msg">Project details</label>
+            <textarea id="cf-msg" name="message" placeholder="Tell me about your footage, deadline and goals..." required></textarea>
+          </div>
+          <span class="magnetic-wrap"><button type="submit" class="btn btn-primary magnetic" style="width:100%;">Send Message</button></span>
+          <div class="form-status" id="formStatus" role="status"></div>
+        </form>
+
+        <div class="contact-socials">
+          <a class="social-btn" href="https://wa.me/920000000000" target="_blank" rel="noopener" aria-label="WhatsApp">W</a>
+          <a class="social-btn" href="mailto:hello@talhaahmed.com" aria-label="Email">@</a>
+          <a class="social-btn" href="#" aria-label="LinkedIn">in</a>
+          <a class="social-btn" href="#" aria-label="Instagram">IG</a>
+          <a class="social-btn" href="#" aria-label="Discord">D</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- ============ FOOTER ============ -->
+<footer>
+  <div class="container">
+    <div class="footer-inner">
+      <a href="#top" class="logo"><span class="dot"></span>Talha Ahmed</a>
+      <div class="footer-links">
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#work">Work</a>
+        <a href="#pricing">Pricing</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© <span id="year"></span> Talha Ahmed. All rights reserved.</span>
+      <span>Video Editor · Motion Designer · AI Content Creator — Pakistan</span>
+    </div>
+  </div>
+</footer>
+
+<!-- ============ PROJECT MODAL ============ -->
+<div class="modal-overlay" id="projectModal">
+  <div class="modal-box" id="modalBox">
+    <button class="modal-close" id="modalClose" aria-label="Close">✕</button>
+    <div id="modalContent"></div>
+  </div>
+</div>
+
+<!-- ============ LIBS ============ -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<script src="https://unpkg.com/lenis@1.1.13/dist/lenis.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+
+<script src="script.js"></script>
+</body>
+</html>
